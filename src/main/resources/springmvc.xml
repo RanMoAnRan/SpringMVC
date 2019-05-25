@@ -24,6 +24,7 @@
 
     <!--配置mvc注解驱动-->
     <mvc:annotation-driven>
+        <!--json转换为String的消息转换器编码-->
         <mvc:message-converters>
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
                 <property name="defaultCharset" value="utf-8"></property>
